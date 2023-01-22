@@ -41,7 +41,6 @@
 　本番リリース：2月末〜3月
 
 
-　■画面遷移図
-https://www.figma.com/file/WV7vpHpOxTn2p53foAdWP2/otsukare_neko?node-id=0%3A1&t=pnt4b8CghxFu4awa-1
-
+  ■画面遷移図
+  https://www.figma.com/file/WV7vpHpOxTn2p53foAdWP2/otsukare_neko?node-id=0%3A1&t=F00GlwR5uUnD4AJ8-1
 
