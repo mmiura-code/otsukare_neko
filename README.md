@@ -35,7 +35,13 @@
 　
 　▼スケジュール例
 　企画〜技術調査：1/20
-　README〜ER図作成：1/20
-　メイン機能実装：1/20~2/20
-　β版をRUNTEQ内リリース（MVP）：2/20〆切
+　README〜ER図作成：1/30
+　メイン機能実装：1/30~2/28
+　β版をRUNTEQ内リリース（MVP）：2/28〆切
 　本番リリース：2月末〜3月
+
+
+　■画面遷移図
+https://www.figma.com/file/WV7vpHpOxTn2p53foAdWP2/otsukare_neko?node-id=0%3A1&t=pnt4b8CghxFu4awa-1
+
+
