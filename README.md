@@ -45,4 +45,4 @@
   https://www.figma.com/file/WV7vpHpOxTn2p53foAdWP2/otsukare_neko?node-id=0%3A1&t=F00GlwR5uUnD4AJ8-1
 
   ■ER図
-[![Image from Gyazo](https://i.gyazo.com/2343f66b99ff5e9d0f806140cdf12c90.jpg)](https://gyazo.com/2343f66b99ff5e9d0f806140cdf12c90)
+[![Image from Gyazo](https://i.gyazo.com/d59c0d85ee492caf995a51d65156e661.png)](https://gyazo.com/d59c0d85ee492caf995a51d65156e661)
