@@ -42,5 +42,5 @@
 
 
   ■画面遷移図
-  https://www.figma.com/file/WV7vpHpOxTn2p53foAdWP2/otsukare_neko?node-id=0%3A1&t=F00GlwR5uUnD4AJ8-1
-
+  https://app.diagrams.net/?src=about#L%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB
+  [![Image from Gyazo](https://i.gyazo.com/f25a857710e3cadfb5bf147e1492e353.png)](https://gyazo.com/f25a857710e3cadfb5bf147e1492e353)
