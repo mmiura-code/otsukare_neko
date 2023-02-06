@@ -16,15 +16,15 @@
 
 　■実装予定の機能
 　LINEの友達に追加することでLINEbotを使用できるようになり
-　特定の単語やメッセージを受けて返事をすることができる
+　特定の単語やメッセージを受けて返事をすることができる(feedbacks)
 　さらに
 　テキスト分析により感情を数値で割り出し対応した返事をすることができる
-　スケジュール機能で『おかえり』を言うことができる
+　スケジュール機能(LINEbot gem:whenever)で『おかえり』を言うことができる
  
   追加機能：
-　日記機能：　今日のご機嫌度（気分）記録　キャラクターとのやりとりで日記として記録
-　┗過去振り返り機能（一ヶ月前、一年前）
-　 webサイトで過去の記録を読むことができる
+　日記機能(diary)：　今日のご機嫌度（気分:category）記録　キャラクターとのやりとりで日記として記録
+　┗過去振り返り機能（一ヶ月前、一年前:diary_notifications）
+　LIFFで過去の記録を読むことができる
 
 
 
@@ -43,4 +43,4 @@
 
   ■画面遷移図
   https://app.diagrams.net/?src=about#L%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB
-  [![Image from Gyazo](https://i.gyazo.com/f25a857710e3cadfb5bf147e1492e353.png)](https://gyazo.com/f25a857710e3cadfb5bf147e1492e353)
+  [![Image from Gyazo](https://i.gyazo.com/8bb4e1a240794ba009dde40c947b8ff3.jpg)](https://gyazo.com/8bb4e1a240794ba009dde40c947b8ff3)
