@@ -43,4 +43,4 @@
 
   ■画面遷移図
   https://app.diagrams.net/?src=about#L%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB
-  [![Image from Gyazo](https://i.gyazo.com/6476991270e2d5597697eaa39e7dbb63.png)](https://gyazo.com/6476991270e2d5597697eaa39e7dbb63)
+  [![Image from Gyazo](https://i.gyazo.com/f51eb1fd76131df46558b53056e8f68e.png)](https://gyazo.com/f51eb1fd76131df46558b53056e8f68e)
