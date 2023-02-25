@@ -1,46 +1,24 @@
-■ サービス概要
-　なかなか愚痴を言えない人に
-　LINEを使って気兼ねなく愚痴を吐け、返事をもらうことができるサービスです
-　
-　
-　■メインのターゲットユーザー
-　人相手だと迷惑をかけたくなくて愚痴を言えない人
+# README
 
-　■ユーザーが抱える課題
-　場の空気を壊さずに愚痴を言いたいが、人には言いにくい。
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
+Things you may want to cover:
 
-　■解決方法
-　人間相手だと気兼ねなく愚痴を吐けないので、機械(LINEBotを使用）に対して愚痴を吐けるようにする
+* Ruby version
 
+* System dependencies
 
-　■実装予定の機能
-　LINEの友達に追加することでLINEbotを使用できるようになり
-　特定の単語やメッセージを受けて返事をすることができる(feedbacks)
-　さらに
-　テキスト分析により感情を数値で割り出し対応した返事をすることができる
-　スケジュール機能(LINEbot gem:whenever)で『おかえり』を言うことができる
- 
-  追加機能：
-　日記機能(diary)：　今日のご機嫌度（気分:category）記録　キャラクターとのやりとりで日記として記録
-　┗過去振り返り機能（一ヶ月前、一年前:diary_notifications）
-　LIFFで過去の記録を読むことができる
+* Configuration
 
+* Database creation
 
+* Database initialization
 
-　■なぜこのサービスを作りたいのか？
-　自分と同じように、人に愚痴を吐きにくい人にとってストレス解消と思考の整理に役立つと考えています。
+* How to run the test suite
 
-　■スケジュール
-　
-　▼スケジュール例
-　企画〜技術調査：1/20
-　README〜ER図作成：1/30
-　メイン機能実装：1/30~2/28
-　β版をRUNTEQ内リリース（MVP）：2/28〆切
-　本番リリース：2月末〜3月
+* Services (job queues, cache servers, search engines, etc.)
 
+* Deployment instructions
 
-  ■画面遷移図
-  https://app.diagrams.net/?src=about#L%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB
-  [![Image from Gyazo](https://i.gyazo.com/b0064d36b863005371d337978ffc9952.png)](https://gyazo.com/b0064d36b863005371d337978ffc9952)
+* ...
