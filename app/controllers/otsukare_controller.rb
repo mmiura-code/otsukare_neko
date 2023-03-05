@@ -2,7 +2,7 @@ class OtsukareController < ApplicationController
 
     protect_from_forgery except: :callback
 
-    OMAJINAI = /アブラカタブラ|チチンプイプイ|ヒラケゴマ/
+    KANASHIMI = '疲れ|だるい|ダル|悲|ムカつく|むかつく|イラつく|イライラ|怒'
   
     def callback
       client = Line::Bot::Client.new do |config|
@@ -40,15 +40,14 @@ class OtsukareController < ApplicationController
     end
   
     def reaction_text(event)
-      if event.message['text'].match?(OMAJINAI)
-        'It is Omajinai'                          # 定数OMAJINAIに含まれる文字列の内、いずれかに一致した投稿がされた場合に返す値
+      if event.message['text'].match?(KANASHIMI)
+        'どしたー？'                        # 定数OMAJINAIに含まれる文字列の内、いずれかに一致した投稿がされた場合に返す値
       elsif event.message['text'].match?('ruby')
-        'Is it Programming language? Ore?'        # `ruby`という文字列が投稿された場合に返す値
+        'Is it Programming language? Ore?'        # 感情テキストに変える      
       else
-        event.message['text']                     # 上記２つに合致しない投稿だった場合、投稿と同じ文字列を返す
+        'にゃーん'
+        
+                        # 上記２つに合致しない投稿だった場合、投稿と同じ文字列を返す
       end
     end
   end
-
-
-end
