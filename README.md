@@ -39,3 +39,6 @@
 　メイン機能実装：3/1~3/31
 　β版をRUNTEQ内リリース（MVP）：4/10〆切
 　本番リリース：4/10~
+
+ER図：
+[![Image from Gyazo](https://i.gyazo.com/0178e7980b6605276683f98fd3bd886e.png)](https://gyazo.com/0178e7980b6605276683f98fd3bd886e)
