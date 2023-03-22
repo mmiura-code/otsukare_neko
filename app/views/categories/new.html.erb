@@ -1,0 +1,13 @@
+<div class="col-sm-12">
+    <h2 class="text-center">カテゴリの追加</h2>
+    <%= form_with model: @category, local: true do |f| %>
+        <div class="form_input">
+            <%= f.label :name %>
+            <%= f.text_field :name, class:"form-control" %>
+        </div>
+        <div class="form_action row">
+            <%= f.submit "登録する", class: "btn col-sm-12 submit_btn" %>
+        </div>
+    <% end %>
+</div>
+バイナリでも
