@@ -1,0 +1,7 @@
+<h1>Editing Diary</h1>
+
+<%= render 'form', diary: @diary %>
+<%#= image_tag @diary.image.url if @diary.image? %>
+<%= image_tag @diary.image_url, width: '300' %>
+<%= link_to 'Show', @diary %> |
+<%= link_to 'Back', diaries_path %>

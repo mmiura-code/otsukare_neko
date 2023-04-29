@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @diary.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @diary.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @diary.image_url, width: '300' %>
+</p>
+
+<%= link_to 'Edit', edit_diary_path(@diary) %> |
+<%= link_to 'Back', diaries_path %>
