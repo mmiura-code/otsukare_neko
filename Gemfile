@@ -35,6 +35,12 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'simple_form'
 gem 'dotenv-rails'
 
+#認証用
+gem 'devise'
+gem 'devise_token_auth'
+gem 'omniauth'
+gem 'omniauth-line'
+gem 'omniauth-rails_csrf_protection'
 #ここまで
 
 

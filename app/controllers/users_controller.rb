@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+#class UsersController < ApplicationController
     require 'net/http'
 
   def create
@@ -21,4 +21,4 @@ class UsersController < ApplicationController
     end
   end
 
-end
+#end
