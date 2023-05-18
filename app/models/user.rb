@@ -1,34 +1,17 @@
 class User < ApplicationRecord
-    has_many :diaries
-            # Include default devise modules.
-            devise :database_authenticatable, :registerable,
-                    :recoverable, :rememberable, #:trackable, 
-                    :validatable,
-                    :confirmable,
-                    :omniauthable, omniauth_providers: %i[line] # この1行を追加
-            
-   # validates :line_id, presence: true, uniqueness: true
-   #:trackableコメントアウト。
+    authenticates_with_sorcery!
+    
+    has_many :user_diaries, dependent: :destroy, foreign_key: 'diary_id'
+    has_many :diaries, through: :user_diaries  
 
-   def social_profile(provider)
-    social_profiles.select { |sp| sp.provider == provider.to_s }.first
-  end
-
-  def set_values(omniauth)
-    return if provider.to_s != omniauth["provider"].to_s || uid != omniauth["uid"]
-    credentials = omniauth["credentials"]
-    info = omniauth["info"]
-
-    access_token = credentials["refresh_token"]
-    access_secret = credentials["secret"]
-    credentials = credentials.to_json
-    name = info["name"]
-  end
-
-  def set_values_by_raw_info(raw_info)
-    self.raw_info = raw_info.to_json
-    self.save!
-  end
+    validates :password, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
+    validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
+    validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
+  
+    validates :email, uniqueness: true
+    validates :email, presence: true
+    validates :first_name, presence: true, length: { maximum: 255 }
+    validates :last_name, presence: true, length: { maximum: 255 }
 
 
 

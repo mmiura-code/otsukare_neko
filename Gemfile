@@ -41,8 +41,11 @@ gem 'devise_token_auth'
 gem 'omniauth'
 gem 'omniauth-line'
 gem 'omniauth-rails_csrf_protection'
+gem 'sorcery', '0.16.5'
 #ここまで
 
+#その他使用ツール
+gem 'slim-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

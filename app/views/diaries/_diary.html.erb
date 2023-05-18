@@ -1,0 +1,29 @@
+<div class="col-sm-12 col-lg-4 mb-3">
+
+  <div id="diary-id-<%= diary.id %>">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">
+
+            <%= diary.title %>
+          </a>
+        </h4>
+        <div class='mr10 float-right'>
+           </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            
+            <%#= diary.user.decorate.full_name %>
+          </li>
+          <li class="list-inline-item">
+            
+            <%= l diary.created_at, format: :long %>
+          </li>
+        </ul>
+        <p class="card-text"><%= diary.body %></p>
+       
+      </div>
+    </div>
+  </div>
+</div>

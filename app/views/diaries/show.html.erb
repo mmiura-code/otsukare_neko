@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  
+  <%= @diary.created_at, format: :long %>
+</p>
+
+<p>
   <strong>Title:</strong>
   <%= @diary.title %>
 </p>

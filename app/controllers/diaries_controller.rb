@@ -3,11 +3,17 @@ class DiariesController < ApplicationController
 
   # GET /diaries or /diaries.json
   def index
-    @diaries = Diary.all
+    #@diaries = Diary.all.includes(:user).order(created_at: :desc)
+    #@diaries = Diary.all.includes(:user).order(created_at: :desc)
+    
+    @diaries = Diary.where(user_id: current_user.id).order("created_at DESC")
+    
   end
 
   # GET /diaries/1 or /diaries/1.json
   def show
+    @diary = Diary.find(params[:id])
+
   end
 
   # GET /diaries/new
@@ -17,20 +23,19 @@ class DiariesController < ApplicationController
 
   # GET /diaries/1/edit
   def edit
+    @diary = Diary.find(params[:id])
   end
 
   # POST /diaries or /diaries.json
   def create
-    @diary = Diary.new(diary_params)
-
-    respond_to do |format|
-      if @diary.save
-        format.html { redirect_to diary_url(@diary), notice: "Diary was successfully created." }
-        format.json { render :show, status: :created, location: @diary }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @diary.errors, status: :unprocessable_entity }
-      end
+    @diary = current_user.diaries.build(diary_params)
+    
+    if @diary.save
+      byebug
+      redirect_to diaries_path, success: t('defaults.message.created')
+    else
+      flash.now['danger'] = t('defaults.message.not_created')
+      render :new
     end
   end
 
@@ -64,7 +69,10 @@ class DiariesController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
+    #user_id追加？
     def diary_params
-      params.require(:diary).permit(:title, :body, :image, :image_cash)
+      params.require(:diary).permit(:title, :body, :image, :image_cache)
     end
+
+  
 end
